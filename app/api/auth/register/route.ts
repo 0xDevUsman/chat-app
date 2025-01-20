@@ -10,7 +10,7 @@ export const POST = async (req: NextRequest) => {
     const body = await req.json();
     if (!body) {
       return NextResponse.json(
-        { message: "Invalid request body" },
+        { message: "please Provide Body" },
         { status: 400 }
       );
     }
